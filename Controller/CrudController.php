@@ -43,7 +43,7 @@ abstract class CrudController extends Controller {
 
     protected function renderIndexAction() {
         $params = $this->getRenderParams();
-        $params['colums'] = $this->getColumnsHeader();
+        //$params['colums'] = $this->getColumnsHeader();
         $params['entities'] = $this->getRepository()->findAll();
         $params['columns'] = $this->getColumnsHeader();
         
