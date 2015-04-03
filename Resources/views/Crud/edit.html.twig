@@ -5,10 +5,10 @@
 {% block crud_top_button %}
 <div  style="padding-bottom: 44px;">
     <div class="pull-left" style="padding-bottom: 10px;">
-        <a href="{{ path(routeIndex) }}" class="btn btn-default">
-            <span class="glyphicon glyphicon-chevron-left"></span> 
-            Back to the list
-        </a>
+        <div class="btn-group">
+            <a href="{{ path(routeShow, { 'id': entity.id }) }}" class="btn btn-default "><span class="glyphicon glyphicon-chevron-left"></span> Back</a>
+            <a href="{{ path(routeIndex) }}" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Back to the list</a>
+        </div>
     </div>
     <div class="pull-right" style="padding-bottom: 10px;">
 
