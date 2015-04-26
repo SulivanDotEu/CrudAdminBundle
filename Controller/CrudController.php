@@ -79,7 +79,7 @@ abstract class CrudController extends Controller {
     public function showAction($id) {
         $entity = $this->getRepository()->find($id);
         if (!$entity)
-            throw $this->createNotFoundException('Unable to find Parking entity.');
+            throw $this->createNotFoundException('Unable to find entity.');
 
         $deleteForm = $this->createDeleteForm($id);
 
